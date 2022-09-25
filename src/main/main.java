@@ -1,13 +1,18 @@
 package monedero;
 import java.util.Scanner;
 
-
 public class main {
+
+    private static int cantidad;
 public static void main(String[]args){
 Scanner leer=new Scanner(System.in);
 int opcion;
-System.out.println("Dinero con el que cuentas");
-double cantidad = leer.nextDouble();
+
+   cantidad = 500;
+ System.out.println("Tu Saldo Actual es:");
+
+double cantidad = 500;
+  System.out.println("Q"+cantidad);
 Monedero monedero=new Monedero(cantidad);
 
 do {
@@ -36,3 +41,4 @@ break;
 
 }
 }
+
